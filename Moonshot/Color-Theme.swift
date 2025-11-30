@@ -16,3 +16,12 @@ extension ShapeStyle where Self == Color {
         Color(red: 0.1, green: 0.1, blue: 0.2)
     }
 }
+
+struct CustomDivider : View {
+    var body: some View {
+        Rectangle()
+            .frame(height: 2)
+            .foregroundStyle(.lightBackground)
+            .padding(.vertical)
+    }
+}
